@@ -1,0 +1,109 @@
+<!-- <!DOCTYPE html> -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jewelry Website Ювелирный сайт</title>
+    <link rel="stylesheet" href="normalize.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="container">
+        <main class="main">
+
+            <header class="header">
+                <div class="header__text">
+    
+                    <div class="header__main_h1">
+                        <h1 class="header___text_h1">Украшения собственного производства</h1>
+                    </div>
+                    <div class="header__main_p">
+                         <p class="header__text_p">Все изделия создаются с любовью для каждого клиента</p>
+                    </div>
+                    <div class="header__main_a">
+                        <a href="#section__end" class="header__a">Сделать расчет и заказ</a>
+                    </div>
+                </div>
+                <div class="header__images">
+                    <div id="MaskGroup1" class="header__img_Mask-Group1_div">
+
+                        <img class="header__img_Mask-Group1" src="Mask Group1.png" alt="Mask Group1">
+                    </div>
+                    <div id="Rectangle43" class="header__img_Rectangle-43_div">
+
+                        <img class="header__img_Rectangle-43" src="Rectangle 43.png" alt="Rectangle 43">
+                    </div>
+                    <div id="MaskGroup2" class="header__img_Mask-Group2_div">
+
+                        <img class="header__img_Mask-Group2"  src="Mask Group2.png" alt="Mask Group2">
+                    </div>
+                </div>
+            </header>
+            <section class="section__main">
+                <h2 class="section__main_h2" >Наши изделия</h2>
+                <div class="section__main_images">
+                    <div id="MaskGroupMain1" class="section__main_Mask-group-main1_div">
+
+                        <img class="section__main_Mask-group-main1" src="Mask group main1.png" alt="Mask group main1">
+                    </div>
+                    <div class="section__main_Mask-group-main2-3">
+                        <div id="MaskGroupMain2" class="section__main_Mask-group-main2_div">
+
+                            <img class="section__main_Mask-group-main2" src="Mask group main2.png" alt="Mask group main2">
+                        </div>
+                        <div id="MaskGroupMain3" class="section__main_Mask-group-main3_div">
+
+                            <img class="section__main_Mask-group-main3" src="Mask group main3.png" alt="Mask group main3">
+                        </div>
+                    </div>
+                    <div id="docha" class="section__main_Mask-group-main4_div">
+
+                        <img  class="section__main_Mask-group-main4" src="Mask group main4.png" alt="Mask group main4">
+                    </div>
+                </div>
+            </section>
+        
+            <section class="section__end" id="section__end">
+                <div class="section__end_arrow">
+                    <svg class="circle" viewBox="0 0 200 200">
+                        <path id="circleShape" class="circle__shape" d="M 20, 100 a 80,80 0 1,1 160,0 a 80,80 0 1,1 -160,0" fill="none"></path>
+                        <path class="circle__arrow"  d="M 75 100 L 125 100 L 110 85 M 125 100 L 110 115" fill="none" stroke="rgb(43, 32, 36)" stroke-width="2"></path>
+                        <text class="circle__text">
+                            <textPath href="#circleShape">Рассчитать стоимость</textPath>
+                        </text>
+                    </svg>
+                </div>
+                <!-- <div class="section__end_calc">
+                    <p class="section__end_p-1">Выберите изделие:</p>
+                    <input class="end__btn-1" type="search" placeholder="Выбрать из списка">
+                    <p class="section__end_p-2">Укажите количество:</p>
+                    <input class="end__btn-2" type="number" placeholder="0">
+                    <button class="end__btn-3">Рассчитать</button>
+                </div> -->
+                <div class="section__end_calc">
+                    <form class="section__end_form">
+                        <p class="section__end_form_p-1">Выберите изделие:</p>
+                        <select id="selectProduct" class="section__end_form_select"><!-- Выбор вариантов-->
+                            <option class="section__end_form_option" value="0" selected disabled >Выбрать из списка</option>
+                            <option class="section__end_form_option" value="1000">Браслет (1000 ₽)</option>
+                            <option class="section__end_form_option" value="1500">Кольцо (1500 ₽) </option>
+                            <option class="section__end_form_option" value="2000">Серги (2000 ₽)</option>
+                        </select>
+                        <p class="section__end_form_p-2">Укажите количество:</p>
+                        <input id="quantityProduct" class="section__end_form_input" type="number" value="0" min="0">
+                        <button class="section__end_form_btn" type="button" id="btnProduct">Рассчитать</button>
+                    </form>
+                    <div id="infoProdukt" class="section__end_sum" style="display:none;">
+                        <p class="section__end_sum_p-1">Итог: <span id="priceProduct"></span> ₽</p>
+                        <p class="section__end_sum_p-2">Оставьте заявку по почте:
+                            <a class="section__end_sum_a" href="mailto:order@jewelery.com">order@jewelery.com</a></p>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
